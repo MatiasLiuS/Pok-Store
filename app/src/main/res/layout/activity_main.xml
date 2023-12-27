@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pokemonbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pkmn"
+        android:text="@string/poke_store"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:background="#E6FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/Store"
+        android:layout_width="match_parent"
+        android:layout_height="406dp"
+        android:layout_above="@+id/Cost"
+        android:layout_below="@+id/textView"
+        android:fontFamily="@font/pkmn"
+        android:layout_marginBottom="197dp">
+
+        <RadioButton
+            android:id="@+id/pokeballButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/pkmn"
+            android:text="@string/pokeballs"
+            android:background="#B3FFFFFF"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/pokeballDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pkmn"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Add checkboxes for Store 1 here -->
+            <CheckBox
+                android:id="@+id/pokeball_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:text="@string/pokeball_200"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/pokeball_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:text="@string/great_ball_600"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/pokeball_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:text="@string/ultra_ball_800"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/pokeball_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:text="@string/master_ball_100000"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/potionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/pkmn"
+            android:text="@string/potions"
+            android:textSize="24sp"
+            android:background="#B3FFFFFF"
+            android:visibility="visible"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/potionDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fontFamily="@font/pkmn"
+            android:visibility="gone">
+
+            <!-- Add checkboxes for Store 1 here -->
+            <CheckBox
+                android:id="@+id/potion_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/potion_200"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/potion_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/super_potion_700"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/potion_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hyper_potion_1500"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/potion_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/max_potion_2500"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/specialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/pkmn"
+            android:text="@string/special"
+            android:background="#B3FFFFFF"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/specialDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fontFamily="@font/pkmn"
+            android:visibility="gone">
+
+            <!-- Add checkboxes for Store 1 here -->
+            <CheckBox
+                android:id="@+id/PP_Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pp_up_25000"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/Ether"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ether_50000"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/MaxRevive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/max_revive_50000"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/RareCandy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rare_candy_100000"
+                android:background="#80FFFFFF"
+                android:fontFamily="@font/pkmn"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/imageRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Cost"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/itemimage1"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pokeball"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/itemimage2"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/greatball"
+            android:contentDescription="@string/image2" />
+
+        <ImageView
+            android:id="@+id/itemimage3"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ultraball"
+            android:contentDescription="@string/imag33" />
+
+        <ImageView
+            android:id="@+id/itemimage4"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/masterball"
+            android:contentDescription="@string/image4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cost_0"
+        android:textAlignment="center"
+        android:fontFamily="@font/pkmn"
+        android:background="#B3FFFFFF"
+        android:textSize="24sp" /> <!-- Align textView3 to the bottom of the RelativeLayout -->
+
+</RelativeLayout>

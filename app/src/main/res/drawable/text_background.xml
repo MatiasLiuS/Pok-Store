@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- res/drawable/text_background.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Set the background color and opacity -->
+        <solid android:color="#80FFFFFF" /> <!-- #80 for 50% opacity, you can adjust as needed -->
+
+        <!-- Set the corner radius to round the corners -->
+        <corners android:radius="8dp" />
+    </shape>
+</selector>

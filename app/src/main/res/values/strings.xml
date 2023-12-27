@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Homework#2</string>
+    <string name="poke_store">Poke Store</string>
+    <string name="cost_0">Cost ₽0</string>
+    <string name="ether_50000">Ether ₽50000</string>
+    <string name="max_revive_50000">Max Revive ₽50000</string>
+    <string name="pp_up_25000">PP Up ₽25000</string>
+    <string name="rare_candy_100000">Rare Candy ₽100000</string>
+    <string name="pokeballs">Pokeballs</string>
+    <string name="pokeball_200">Pokeball ₽200</string>
+    <string name="great_ball_600">Great Ball ₽600</string>
+    <string name="todo">TODO</string>
+    <string name="image2">image2</string>
+    <string name="imag33">image 3\n</string>
+    <string name="image4">image 4</string>
+    <string name="ultra_ball_800">Ultra Ball ₽800</string>
+    <string name="master_ball_100000">Master Ball ₽100000</string>
+    <string name="potions">Potions</string>
+    <string name="potion_200">Potion ₽200</string>
+    <string name="hyper_potion_1500">Hyper Potion ₽1500</string>
+    <string name="max_potion_2500">Max Potion ₽2500</string>
+    <string name="super_potion_700">Super Potion ₽700</string>
+    <string name="special">Special</string>
+</resources>
